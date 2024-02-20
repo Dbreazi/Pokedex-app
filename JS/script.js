@@ -1,7 +1,5 @@
-//single line comment//
-/*multi-line comment*/
-
-alert('Hello World');
-
-let favouriteFood = 'lasagne';
-document.write(favouriteFood);
+let PokemonList= [
+    {name: 'Bulbasaur', height: 7, type: ['grass', 'poison']},
+    {name: 'Froslass', height: 3, type: ['ice', 'ghost']},
+    {name: 'Horsea', height: 1, type: ['water', 'racing']}
+]
