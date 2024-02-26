@@ -11,13 +11,12 @@ let PokemonList = [
 */
 
 function pokemonLoopFunction(pokemon) {
-    document.write(pokemon.name + ' / Height: ' + pokemon.height);
+    document.write(pokemon.name + ' / Height: ' + pokemon.height + (pokemon.height > 5 ? " - Wow, that's a big one!" : "") + '<br>');
 
+    /* method 1 for >5 hieght rule
     if (pokemon.height > 5 ) {
         document.write (" - Wow, that's a big one!");   
-    }
-
-    document.write('<br>');
+    }*/
 
 }
 
