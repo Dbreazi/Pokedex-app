@@ -1,16 +1,25 @@
 
-let PokemonList= [
+let PokemonList = [
     {name: 'Bulbasaur', height: 7, type: ['grass', 'poison']},
     {name: 'Froslass', height: 3, type: ['ice', 'ghost']},
     {name: 'Horsea', height: 1, type: ['water', 'racing']}
 ];
 
-for (let i=0; i<PokemonList.length; i++) {
-    document.write(`${PokemonList[i].name} (height: ${PokemonList[i].height})`);
+/*PokemonList.forEach (function(pokemon) {
+    document.write(pokemon.name + ' / Height: ' + pokemon.height + ' <br> ');
+});
+*/
 
-    if (PokemonList[i].height >5 ){
-    document.write (" - Wow, that's a big one!");
+function pokemonLoopFunction(pokemon) {
+    document.write(pokemon.name + ' / Height: ' + pokemon.height);
+
+    if (pokemon.height > 5 ) {
+        document.write (" - Wow, that's a big one!");   
     }
 
     document.write('<br>');
+
 }
+
+
+PokemonList.forEach(pokemonLoopFunction);
