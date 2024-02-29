@@ -4,34 +4,42 @@ let pokemonRepo = (function () {
         {name: 'Bulbasaur', height: 7, type: ['grass', 'poison']},
         {name: 'Froslass', height: 3, type: ['ice', 'ghost']},
         {name: 'Horsea', height: 1, type: ['water', 'racing']}
-];
+    ];
 
-return {
+
+    function addListItem(pokemon){
+    let ulElement = document.querySelector('.pokemon-list');
+        let listItem = document.createElement ('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('buttonStyle')
+        listItem.appendChild(button);
+        ulElement.appendChild(listItem);
+
+        button.addEventListener('click', function() {
+            showDetails(pokemon);
+        });
+    }
+
+    function showDetails(pokemon) {
+        console.log(pokemon);
+    }
+
+    return {
     getAll: function() {
         return PokemonList;
     },
 
     add: function (item) {
         PokemonList.push(item);
+    },
+
+    addListItem: addListItem
     }
-    };
 })();
 
 
-let pokemon = pokemonRepo.getAll();
-    pokemon.forEach(function(item) {
-        document.write(item.name + ' / Height: ' + item.height + (item.height > 5 ? " - Wow, that's a big one!" : "") + '<br>');
+pokemonRepo.getAll().forEach(function(pokemon) {
+        pokemonRepo.addListItem(pokemon);
 });
 
-
-/* previous foreach loop
-
-function pokemonLoopFunction(pokemon) {
-    document.write(pokemon.name + ' / Height: ' + pokemon.height + (pokemon.height > 5 ? " - Wow, that's a big one!" : "") + '<br>');
-
-
-
-}
-
-PokemonList.forEach(pokemonLoopFunction);
-*/
