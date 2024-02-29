@@ -1,0 +1,15 @@
+.buttonStyle {
+    margin: 10px;
+    width: 600px;
+    height: auto;
+    padding: 25px;
+    background-color: lightgreen;
+    text-align: left;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(0, 58, 26);
+    outline: auto;
+    outline-color: black;
+    border-radius: 10px;
+}
