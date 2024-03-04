@@ -32,5 +32,15 @@ ul.pokemon-list {
     font-size: 32px;
     text-transform: capitalize;
     border: 0cap;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.buttonStyle:hover {
+    background-color: rgb(244, 194, 194);
+}
+
+.buttonStyle:active {
+    background-color: white;
+    color: red;
+}
