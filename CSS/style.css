@@ -1,4 +1,4 @@
-
+html,
 body {
     margin: 0;
 }
@@ -38,9 +38,69 @@ ul.pokemon-list {
 
 .buttonStyle:hover {
     background-color: rgb(244, 194, 194);
+    color: rgb(0, 85, 56);
 }
 
 .buttonStyle:active {
     background-color: white;
     color: red;
+}
+
+/* Modal Styling */
+
+#modal-container.is-visible {
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    overflow: auto;
+    display: grid;
+    text-align: center;
+}
+
+.modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.modal-close {
+    text-decoration: underline;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    color: #777;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    color: red;
+    font-size: 42px;
+    letter-spacing: 20px;
+    font-family: monospace;
+}
+
+.modal-content p {
+    font-size: 24px;
+    color: red;
+    font-weight: 20;
+}
+
+.modal-content img {
+    width: 45%; 
+    height: auto; 
+    max-width: 60%; 
+    max-height: 60%;
 }
