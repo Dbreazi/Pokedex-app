@@ -46,11 +46,8 @@ let pokemonRepo = (function () {
     }
 
 
+// Function to load the list of Pokemon from the API
 
-
-
-    
-    // Function to load the list of Pokemon from the API
     function loadList () {
         return fetch(apiUrl).then(function (response) {
             return response.json();
