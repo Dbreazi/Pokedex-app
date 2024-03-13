@@ -1,7 +1,12 @@
-html,
+.pokemon-list {
+    margin-top: 100px;
+}
+
+
+/* html,
 body {
     margin: 0;
-}
+} 
 
 h1 {
     text-align: center;
@@ -44,11 +49,11 @@ ul.pokemon-list {
 .buttonStyle:active {
     background-color: white;
     color: red;
-}
+} */
 
 /* Modal Styling */
 
-#modal-container.is-visible {
+ /* #modal-container.is-visible {
     position: fixed;
     padding: 20px;
     box-sizing: border-box;
@@ -103,4 +108,4 @@ ul.pokemon-list {
     height: auto; 
     max-width: 60%; 
     max-height: 60%;
-}
+} */
